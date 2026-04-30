@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: inherit;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.buzzer {
+  width: 100%;
+  height: 200px;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #ef4444;
+  border-radius: 50%;
+  margin: 16px auto;
+  max-width: 200px;
+}
+
+.buzzer.buzzed {
+  background: #22c55e;
+}
+
+.reset {
+  background: #64748b;
+}
+
+.players {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.players li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #1e293b;
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  gap: 4px;
+}
+
+.controls button {
+  padding: 4px 10px;
+  font-size: 0.875rem;
+}
+
+.error {
+  color: #f87171;
+}
